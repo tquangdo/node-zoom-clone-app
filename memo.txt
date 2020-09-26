@@ -1,5 +1,12 @@
 HEROKU DEPLOY
 1/ npm i -g heroku
-2/ heroku create (need Heroku's login acc)
-3/ git push heroku master
-4/ heroku open
+2/ heroku create --ssh-git (need Heroku's login acc)
+3/ heroku git:remote -a still-temple-84508
+OR
+git remote add heroku git@heroku.com:still-temple-84508.git
+4/ git remote -v
+heroku  git://git.heroku.com/still-temple-84508.git (fetch)
+heroku  git://git.heroku.com/still-temple-84508.git (push)
+5/ heroku keys:add (publickey)
+6/ git push heroku master
+7/ heroku open
