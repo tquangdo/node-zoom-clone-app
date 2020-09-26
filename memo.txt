@@ -1,0 +1,5 @@
+HEROKU DEPLOY
+1/ npm i -g heroku
+2/ heroku create (need Heroku's login acc)
+3/ git push heroku master
+4/ heroku open
