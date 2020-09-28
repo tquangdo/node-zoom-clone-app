@@ -1,6 +1,6 @@
 HEROKU DEPLOY
 1/ npm i -g heroku
-2/ heroku create --ssh-git (need Heroku's login acc)
+2/ heroku create mern-medium-clone-dotq --ssh-git (need Heroku's login acc: $heroku login)
 3/ heroku git:remote -a still-temple-84508
 OR
 git remote add heroku git@heroku.com:still-temple-84508.git
@@ -10,3 +10,4 @@ heroku  git://git.heroku.com/still-temple-84508.git (push)
 5/ heroku keys:add (publickey)
 6/ git push heroku master
 7/ heroku open
+8/ heroku logs --tail
