@@ -9,5 +9,13 @@ heroku  git://git.heroku.com/still-temple-84508.git (fetch)
 heroku  git://git.heroku.com/still-temple-84508.git (push)
 5/ heroku keys:add (publickey)
 6/ git push heroku master
-7/ heroku open
-8/ heroku logs --tail
+7/ heroku open( -a demo-react-router-dotq)
+8/ heroku logs --tail( -a demo-react-router-dotq)
+9/ l/q BUILD_ID of Heroku
+$ heroku ps -a demo-react-router-dotq
+$ heroku plugins:install heroku-builds
+$ heroku builds -a demo-react-router-dotq
+-> pending
+$ heroku builds:cancel 60a37e7b-a576-434d-a1c6-90b40c722630 -a demo-react-router-dotq
+$ heroku builds -a demo-react-router-dotq
+-> failed
