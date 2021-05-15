@@ -17,10 +17,15 @@
 ***********
 ### setting
 https://github.com/tquangdo/node-zoom-clone-app/blob/master/memo.txt
+#### create heroku app & heroku git
+1. `heroku create zoom-clone-app-dotq --ssh-git` (need Heroku's login acc: $heroku login)
+2. `heroku git:remote -a zoom-clone-app-dotq`
+![heroku_git](heroku_git.png)
+***********
 #### check buildpacks
 - `heroku buildpacks -a zoom-clone-app-dotq`
 - -> `heroku/nodejs`
-- ![buildpacks](buildpacks.png)
+![buildpacks](buildpacks.png)
 ***********
 >if: `heroku buildpacks:set mars/create-react-app -a zoom-clone-app-dotq`
 - `heroku buildpacks -a zoom-clone-app-dotq`
