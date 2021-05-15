@@ -1,27 +1,18 @@
 HEROKU DEPLOY
 1/ npm i -g heroku
-2/ heroku create mern-medium-clone-dotq --ssh-git (need Heroku's login acc: $heroku login)
-3/ heroku git:remote -a still-temple-84508
+2/ heroku create zoom-clone-app-dotq --ssh-git (need Heroku's login acc: $heroku login)
+3/ heroku git:remote -a node-zoom-clone-app
 OR
-git remote add heroku git@heroku.com:still-temple-84508.git
+git remote add heroku git@heroku.com:node-zoom-clone-app.git
 4/ git remote -v
-heroku  git://git.heroku.com/still-temple-84508.git (fetch)
-heroku  git://git.heroku.com/still-temple-84508.git (push)
+heroku  git://git.heroku.com/node-zoom-clone-app.git (fetch)
+heroku  git://git.heroku.com/node-zoom-clone-app.git (push)
 5/ heroku keys:add (publickey)
 6/ git push heroku master
-7/ heroku open( -a demo-react-router-dotq)
-8/ heroku logs --tail( -a demo-react-router-dotq)
+7/ heroku open( -a zoom-clone-app-dotq
+8/ heroku logs --tail( -a zoom-clone-app-dotq)
 9/ l/q BUILD_ID of Heroku
-$ heroku ps -a demo-react-router-dotq
+$ heroku ps -a zoom-clone-app-dotq
 $ heroku plugins:install heroku-builds
-$ heroku builds -a demo-react-router-dotq
--> pending
-$ heroku builds:cancel 60a37e7b-a576-434d-a1c6-90b40c722630 -a demo-react-router-dotq
-$ heroku builds -a demo-react-router-dotq
--> failed
-10/ check buildpacks
-$ heroku buildpacks -a demo-react-router-dotq
--> heroku/nodejs
-$ heroku buildpacks:set mars/create-react-app -a demo-react-router-dotq
-$ heroku buildpacks -a demo-react-router-dotq
--> mars/create-react-app
+$ heroku builds -a zoom-clone-app-dotq
+-> pending/failed
