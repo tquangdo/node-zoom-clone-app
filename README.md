@@ -28,5 +28,5 @@ https://github.com/tquangdo/node-zoom-clone-app/blob/master/memo.txt
 ![buildpacks](buildpacks.png)
 ***********
 >if: `heroku buildpacks:set mars/create-react-app -a zoom-clone-app-dotq`
-- `heroku buildpacks -a zoom-clone-app-dotq`
-- -> `mars/create-react-app`
+>* `heroku buildpacks -a zoom-clone-app-dotq`
+>* ->`mars/create-react-app`
