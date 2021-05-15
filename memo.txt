@@ -1,12 +1,12 @@
 HEROKU DEPLOY
 1/ npm i -g heroku
 2/ heroku create zoom-clone-app-dotq --ssh-git (need Heroku's login acc: $heroku login)
-3/ heroku git:remote -a node-zoom-clone-app
+3/ heroku git:remote -a zoom-clone-app-dotq
 OR
-git remote add heroku git@heroku.com:node-zoom-clone-app.git
+git remote add heroku git@heroku.com:zoom-clone-app-dotq.git
 4/ git remote -v
-heroku  git://git.heroku.com/node-zoom-clone-app.git (fetch)
-heroku  git://git.heroku.com/node-zoom-clone-app.git (push)
+heroku  git://git.heroku.com/zoom-clone-app-dotq.git (fetch)
+heroku  git://git.heroku.com/zoom-clone-app-dotq.git (push)
 5/ heroku keys:add (publickey)
 6/ git push heroku master
 7/ heroku open( -a zoom-clone-app-dotq
