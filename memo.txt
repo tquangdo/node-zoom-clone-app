@@ -9,8 +9,8 @@ heroku  git://git.heroku.com/zoom-clone-app-dotq.git (fetch)
 heroku  git://git.heroku.com/zoom-clone-app-dotq.git (push)
 5/ heroku keys:add (publickey)
 6/ git push heroku master
-7/ heroku open( -a zoom-clone-app-dotq
-8/ heroku logs --tail( -a zoom-clone-app-dotq)
+7/ heroku open (-a zoom-clone-app-dotq)
+8/ heroku logs --tail (-a zoom-clone-app-dotq)
 9/ l/q BUILD_ID of Heroku
 $ heroku ps -a zoom-clone-app-dotq
 $ heroku plugins:install heroku-builds
