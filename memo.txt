@@ -11,8 +11,14 @@ heroku  git://git.heroku.com/zoom-clone-app-dotq.git (push)
 6/ git push heroku master
 7/ heroku open (-a zoom-clone-app-dotq)
 8/ heroku logs --tail (-a zoom-clone-app-dotq)
-9/ l/q BUILD_ID of Heroku
-$ heroku ps -a zoom-clone-app-dotq
-$ heroku plugins:install heroku-builds
+9/ $ heroku ps -a zoom-clone-app-dotq
+```
+Free dyno hours quota remaining this month: 542h 25m (98%)
+Free dyno usage for this app: 0h 36m (0%)
+For more information on dyno sleeping and how to upgrade, see:
+https://devcenter.heroku.com/articles/dyno-sleeping
+```
+10/ $ heroku plugins:install heroku-builds
 $ heroku builds -a zoom-clone-app-dotq
 -> pending/failed
+11/ $heroku info <app name>
